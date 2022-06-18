@@ -4,7 +4,7 @@ type SideNavbarProps = {}
 
 const SideNavbar: FunctionComponent<SideNavbarProps> = () => {
     return(
-        <div className="flex min-h-screen w-max p-4 items-center">
+        <div className="fixed flex min-h-screen w-max p-4 items-center z-10">
             <div className="flex flex-col p-2 space-y-4 bg-zinc-100 dark:bg-zinc-900 rounded-xl drop-shadow-xl">
                 {/* Home */}
                 <a href="#" className="hover:bg-zinc-200 dark:hover:bg-zinc-800 transition duration-300 active:scale-95 p-2 rounded-xl">
