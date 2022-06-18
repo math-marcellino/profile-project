@@ -10,11 +10,13 @@ type LayoutProps = {
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
     return (
         <div>
-            <div className="fixed right-0 p-4">
+            <div className="fixed right-0 p-4 lg:block hidden">
                 <ThemeToggle />
             </div>
-            <SideNavbar />
-            {children}
+            <div className="lg:block hidden">
+                <SideNavbar />
+            </div>
+            <div className="flex flex-col items-center">{children}</div>
         </div>
     );
 };
